@@ -1,0 +1,67 @@
+@mixin centerAll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+// between
+@mixin between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// for background img
+@mixin bgImgSize{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+// para hindi mabanat ang img
+@mixin imgFit ($width: 300px, $height: 300px){
+    width: $width;
+    height: $height;
+    object-fit: cover;
+    object-position: center center;
+}
+
+// for grid
+@mixin grid ($cols, $gap){
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    gap: $gap;
+}
+
+// responsive (with specific value)
+
+$mobile: 400px;
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin mobile{
+    @media (min-width:  #{$mobile}){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width:  #{$tablet}) and (min-width: #{$mobile}){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width:  #{$tablet}) and (min-width: #{$mobile}) and (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+// wihout
+
+@mixin mediaQuery($width){
+    @media screen and (max-width: $width){
+        @content;
+    }
+}

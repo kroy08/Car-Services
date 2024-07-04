@@ -1,0 +1,79 @@
+@use "./colors" as  *;
+
+// colors
+$colors: (
+    "dark": $clr-dark,
+    "light": $clr-light,
+    "primary": $clr-primary,
+    "secondary": $clr-secondary,
+);
+
+@each $key, $val in $colors{
+    .text{
+        &--#{$key}{
+            color: $val;
+        }
+    }
+    .bg{
+        &--#{$key}{
+            background-color: $val;
+        }
+    }
+}
+
+// text alignments
+// $text-align:(
+//     "center": center,
+//     "left": left,
+// );
+
+// // other way of text align
+// @each $key, $val in $text-align{
+//     .t-align{
+//         &--#{key} {
+//             text-align: $val;
+//         }
+//     }
+// }
+
+$alignments: center, left, right, justify;
+@each $alignment in $alignments{
+    .t-align--#{$alignment} {
+        text-align: $alignment;
+    }
+}
+
+$positions: absolute, relative, fixed, static;
+@each $position in $positions{
+    .position--#{$position} {
+        position: $position;
+    }
+}
+
+@for $i from 0 through 20{
+    .mt--#{$i}{
+        margin-top: $i + rem;
+    }
+    .mb--#{$i}{
+        margin-bottom: $i + rem;
+    }
+    .mr--#{$i}{
+        margin-right: $i + rem;
+    }
+    .pt--#{$i}{
+        padding-top: $i + rem;
+    }
+    .pb--#{$i}{
+        padding-bottom: $i + rem;
+    }
+    .pl--#{$i}{
+        padding-left: $i + rem;
+    }
+    .pr--#{$i}{
+        padding-right: $i + rem;
+    }
+    .py--#{$i} {
+        padding: $i +rem 0;
+    }
+
+}

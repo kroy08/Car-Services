@@ -1,0 +1,39 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.header  {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 0rem 0;
+
+  &__wrapper {
+    @include between;
+    display: flex;
+    img {
+      height: 10rem;
+      width: 10rem;
+    }
+  }
+  
+  &__nav{
+    display: flex;
+    gap: 1rem;
+    margin-right: 10rem;
+    
+    a{
+      color: $clr-light;
+      font-size: 1.5rem;
+    }
+    li{
+      :hover {
+        border-bottom: 10px solid $clr-primary;
+        padding-bottom: 3.5rem;
+        
+      }
+    }
+    
+  }
+  
+}
+
