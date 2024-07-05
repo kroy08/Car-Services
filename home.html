@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
     <title>Car Services</title>
 </head>
 <body>
@@ -14,7 +18,7 @@
                     <img src="./IMG/logo.png" alt="">
                     <nav>
                         <ul class="header__nav">
-                            <li><a href="">HOME</a></li>
+                            <li><a href="">HOME <strong></strong></a></li>
                             <li><a href="">ABOUT</a></li>
                             <li><a href="">SERVICES</a></li>
                             <li><a href="">BLOG</a></li>
@@ -26,15 +30,149 @@
          </header>
 
 <!-- slider -->
-         <Section class="slider bg--dark py--5">
+         <Section class="slider bg--dark py--1">
             <div class="container">
                 <div class="slider__wrapper">
-                    <div class="slider__img">
-                        <img src="./IMG/slide1.jpg" alt="">
-                        <h2>COMPLETE<br>AUTO SERVICES</h2>
+                    <div class="services__sliders">
+                        <div class="slider__img">
+                            <img src="./IMG/slide1.jpg" alt="">
+                            <h2>COMPLETE<br>AUTO SERVICES</h2>
+                        </div>
+                        <div class="slider__img">
+                            <img src="./IMG/slide2.jpg" alt="">
+                            <h2>QUALITY CAR<br>MAINTENANCE</h2>
+                        </div>
+                        <div class="slider__img">
+                            <img src="./IMG/slide3.jpg" alt="">
+                            <h2>FAIR FRIENDLY<br>SERVICE</h2>
+                        </div>
                     </div>
+
                 </div>
             </div>
          </Section>
+
+<!-- BANNER -->
+<section class="banner bg--dark py--1">
+    <div class="container">
+        <div class="banner__wrapper">
+            <div class="banner__card">
+                <h3>COMPLETE SERVICES</h3>
+                <i class="fa-solid fa-gears"></i>
+                <p>Cubilipende sollicitudineed leo pharea aumennec in velit veaugun e diam lor innia est. Proin dictum elem velit Fterdpibus sceleue vitaepe.</p>
+                <a href=""class="btn bg--services">MORE</a>
+            </div>
+            <div class="banner__card">
+                <h3>COMPLETE SERVICES</h3>
+                <i class="fa-solid fa-droplet"></i>
+                <p>Sollicitudineied leo pharetr in velit eaugun eratisque diam lor innia est. Proin dicm elemtum veitdpibu sceleue vita pedeecon era.</p>
+                <a href=""class="btn bg--services">MORE</a>
+            </div>
+            <div class="banner__card">
+                <h3>COMPLETE SERVICES</h3>
+                <i class="fa-solid fa-filter"></i>  
+                <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugun eraam lor innia est. Proin dictum elem velit Fterdpibus sceleue vitaepe.</p>
+                <a href=""class="btn bg--services">MORE</a>
+            </div>
+            <div class="banner__card">
+                <h3>COMPLETE SERVICES</h3>
+                <i class="fa-solid fa-wrench"></i>
+                <p>Sollicitudineied leo pharetr in velit eaugun eratisque diam lor innia est. Proin dicm elemtum veitdpibu sceleue vita pedeecon era.</p>
+                <a href=""class="btn bg--services">MORE</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+ <section class="sevices bg--dark py--1">
+    <div class="container">
+        
+        
+        <div class="services__wrapper">
+            <div class="services__title">
+                <h2>SERVICES</h2>
+                <div class="services__controls" id="controls">
+                    <a  class="prev"><i class="fa-solid fa-circle-arrow-left"></i></a>
+                    <a  class="next"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="services__cards">
+           <div class="services__card">
+            <img src="./IMG/page1_pic1.jpg" alt="">
+            <p>Cubilipende solliciitudineied leo pharea aumennec in velit veaugn erase dialor innia est. proin dictum elemum velit  terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+           </div>
+           <div class="services__card">
+            <img src="./IMG/page1_pic2.jpg" alt="">
+            <p>Cubilipende solliciitudineied leo pharea aumennec in velit veaugn erase dialor innia est. proin dictum elemum velit  terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+           </div>
+           <div class="services__card">
+            <img src="./IMG/page1_pic3.jpg" alt="">
+            <p>Cubilipende solliciitudineied leo pharea aumennec in velit veaugn erase dialor innia est. proin dictum elemum velit  terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+           </div>
+           <div class="services__card">
+            <img src="./IMG/page1_pic1.jpg" alt="">
+            <p>Cubilipende solliciitudineied leo pharea aumennec in velit veaugn erase dialor innia est. proin dictum elemum velit  terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+           </div>
+           <div class="services__card">
+            <img src="./IMG/page1_pic2.jpg" alt="">
+            <p>Cubilipende solliciitudineied leo pharea aumennec in velit veaugn erase dialor innia est. proin dictum elemum velit  terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+           </div>
+           <div class="services__card">
+            <img src="./IMG/page1_pic3.jpg" alt="">
+            <p>Cubilipende solliciitudineied leo pharea aumennec in velit veaugn erase dialor innia est. proin dictum elemum velit  terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
+           </div>
+        </div>
+        </div>
+    </div>
+ </section>
+
+<!-- home about -->
+ <section class="homeAbout bg--dark py--1">
+    <div class="container">
+        <div class="homeAbout__wrapper">
+            <div class="homaAbout__title">
+                <h2>WHAT WE DO</h2>
+                <span class="line"> </span>
+                <p>Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia esroin dictum elemenelit. Fusce euismod consequat antrem ipsm door sit amet coectetuer adipiscing elit. Pellentesque sed dololiquam cong.
+                </p>
+                <span class="line"> </span>
+                <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi aliquet sit amet euismod in auctor ut ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor lobortis quis lobortis dignissim pulvinar ac lorem. Vestibulum sed ante.
+                </p>
+                
+            </div>
+            <div class="homaAbout__title">
+                <h2>WHY US?</h2>
+                <span class="line"> </span>
+                <text>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum <br> velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia est.
+                </text>
+                <span class="line"> </span>
+                <small>Proin dictum elemum veliterdpibus sceleue vitaepeecon eonec in vel ipsum auctorulv inaroin ullamcorper u et felisestiulis lacinia eroin dictum elemenelit.</small>
+                <span class="line"> </span>
+                <text>Proin dictum elemenelit. Fusce euismod consequat antrem ipsm door sit amet con sectetuer adipiscing elit. Pellentesque sed dololiquam cong.
+                </text>
+            </div>
+        </div>
+    </div>
+ </section>
+ <!-- appointment -->
+  <section class="appointment bg--dark py--1">
+    <div class="container">
+        <div class="appointment__wrapper">
+            <div class="appointment__title">
+                <h1>NO BETTER CAR SERVICE <br> ANYWHERE</h1>
+            </div>
+            <div class="calendar">
+                <a href=""class="btn bg--services">REQUEST AN APPOINMENT</a>
+                <i class="fa-regular fa-calendar-days"></i>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="./JS/slider.js"></script>
 </body>
 </html>

@@ -77,3 +77,11 @@ $positions: absolute, relative, fixed, static;
     }
 
 }
+
+.line {
+    width: 100%;
+    height: .5px;
+    background-color: $clr-secondary;
+    position: relative;
+    display: block;
+}

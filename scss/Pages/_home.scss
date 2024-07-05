@@ -1,20 +1,163 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
 // slider
 .slider{
     padding: 10rem 0;
-  
     &__wrapper {
-      display: flex;
+      
     }
-    &__img {
-      position: relative;
-      display: inline-block;
-      h2{
-        position: absolute;
-        margin-left: 60rem;
-        font-size: 4rem;
-        margin-top: -25rem;
-        z-index: 15;
+
+    h2{ 
+      position: absolute;
+      margin-left: 60rem;
+      font-size: 3rem;
+      margin-top: -23rem;
+      z-index: 1;
+    }
+
+  }
+
+  // banner
+  .banner {
+    margin-top: -9rem;
+    &__wrapper {
+      background-color: $clr-secondary;
+      @include grid(4,  1rem);
+      @include centerAll;
+      gap: 5rem;
+      padding-bottom: 3rem;
+    }
+
+    &__card {
+      text-align: center;
+      max-width: 15rem;
+    }
+    h3{
+  
+      font-weight: 300rem;
+      letter-spacing: .3rem;
+      margin-bottom: 2rem;
+      margin-top: 4rem;
+    }
+    i{
+      font-size: 3rem;
+      margin-bottom: 2rem;  
+    }
+    p{
+      margin-bottom: 2rem;
+    }
+    a{
+      margin-bottom: 3rem;
+    }
+
+    &__card {
+      :hover{
+        
       }
     }
   }
+
+  // services
+  .services {
+
+    
+    &__title{
+        h2{
+            font-size: 2rem;
+            letter-spacing: .5rem;
+            margin-left: 3rem;
+            border-bottom: .5px solid $clr-light;
+            max-width: 84rem;
+            padding-bottom: 1rem;
+            
+        }
+      
+    }
   
+    &__wrapper {
+        background-color: $clr-primary;
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+  
+    &__cards {
+        max-width: 490rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+  
+  
+  
+  }
+  
+  // home about
+
+  .homeAbout {
+
+    &__wrapper {
+      background-color: $clr-light;
+      @include grid(2, 1rem);
+      justify-content: center;
+      padding-bottom: 3rem;
+      // margin-left: 2rem;
+      padding-left: 3rem;
+    }
+ 
+    h2{
+      color: $clr-dark;
+      font-size: 2rem; 
+      max-width: 40rem;
+      margin-top: 5rem; 
+
+    }
+    p {
+      color: $clr-dark;
+      max-width: 40rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    
+    text {
+      margin-bottom: 3rem;
+      color: $clr-dark;
+      text-align: justify;
+    }
+    small{
+      color: $clr-primary;
+      max-width: 40rem;
+      margin-bottom: 2rem;
+    }
+
+    span {
+      width: 40rem;
+      color: $clr-secondary;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  // appointment
+  .appointment {
+
+    &__wrapper {
+      background-color: $clr-secondary;
+      padding-bottom: 6rem;
+      padding-top: 3rem;
+    }
+    &__title {
+      h1{
+        font-size: 8rem;
+        margin-left: 7rem;
+      }
+    }
+    i{
+      font-size: 2rem; 
+      
+    }
+    a {
+      margin-right: 2rem;
+      margin-left: 7rem;
+    }
+  
+  }

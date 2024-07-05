@@ -24,11 +24,21 @@
     a{
       color: $clr-light;
       font-size: 1.5rem;
+     
+ 
+
     }
     li{
+      padding-bottom: 3rem;
+      border-bottom: 10px solid transparent;
+      margin-bottom: -3rem ;
       :hover {
+        padding-bottom: 3.9rem;
         border-bottom: 10px solid $clr-primary;
-        padding-bottom: 3.5rem;
+        // -webkit-transition: 0.3s all ease;
+        // transition: 0.3s all ease;
+        // background: #f8565d;
+        
         
       }
     }
