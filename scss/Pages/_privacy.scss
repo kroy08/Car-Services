@@ -1,0 +1,59 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.privacy{
+    &__wrapper{
+        background-color: $clr-light;
+        display: flex;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    &__title{
+        h2{
+            font-size: 2rem;
+            color: $clr-dark;
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
+        p{
+            color: $clr-dark;
+            max-width: 40rem;
+            margin-left: 4rem;
+            margin-right: 4rem;
+        
+        }
+        a{
+            margin-left: 4rem;
+            color: $clr-primary;
+            max-width: 40rem;
+            margin-right: 4rem;
+        }
+        span  {
+            max-width: 40rem;
+            margin-left: 4rem;
+          
+        }
+    }
+    
+    &__title2{
+        h2{
+            font-size: 2rem;
+            color: $clr-dark;
+            margin-left: 4rem;
+           
+            max-width: 30rem;
+        }
+        p{
+            color: $clr-dark;
+            max-width: 30rem;
+            margin-left: 4rem;
+        
+        
+        }
+    }
+
+}
+  

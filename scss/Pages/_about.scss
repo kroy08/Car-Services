@@ -1,0 +1,127 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.aboutFeatures {
+    
+    &__wrapper {
+        background-color: $clr-secondary;
+        padding-bottom: 4rem;
+
+    }
+    &__cards {
+        @include grid (4, 1rem);
+        @include centerAll;
+        gap: 5rem;
+
+    }
+
+    &__title {
+        h2 {
+            font-size: 2rem;
+            padding-top: 10rem;
+            margin-bottom: 1rem;
+            margin-left: 4rem;
+        }
+        span {
+            max-width: 80rem;
+            margin-left: 4rem;
+            margin-bottom: 3rem;
+            color: aquamarine;
+        }
+    }
+
+    &__card {
+        h3 {
+            margin-bottom: 2rem;
+        }
+        p {
+            max-width: 17rem;
+            margin-bottom: 2rem;
+        }
+       
+    }
+
+}
+
+// about history
+
+.aboutHistory {
+    &__wrapper{
+        background-color: $clr-primary;
+        display: flex;
+        padding-bottom: 5rem;
+    }
+
+    &__title {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        h3 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;  
+        }
+        p{
+            max-width: 120rem;
+            padding-bottom: 2rem;
+        }
+        a {
+            color:  #c2c1bb;
+            &:hover{
+                color: $clr-dark;    
+                transition: 0.3s ease;
+            }
+        }
+        h4 {
+            font-size: 2rem;
+            margin-top: 3rem; 
+            margin-bottom: 1rem; 
+            
+        }
+        span {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+// hour team
+
+.aboutTeam {
+    &__wrapper {
+        background-color: $clr-light;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    &__title {
+        h2 {
+            font-size: 2rem;
+            color: $clr-dark;
+            margin-left: 4rem;
+        }
+        span {
+            max-width: 82rem;
+            margin-left: 4rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &__cards{
+        @include grid (4, 1rem);
+        margin-left: 4rem;
+        margin-right: 4rem;
+        gap: 2rem;
+
+        a {
+            color: $clr-primary;
+            &:hover{
+                color: $clr-dark;    
+                transition: 0.3s ease;
+            }   
+    
+        }
+        p{
+            color: $clr-dark;
+        }
+        img {
+            margin-bottom: 1rem;
+        }
+    }
+}

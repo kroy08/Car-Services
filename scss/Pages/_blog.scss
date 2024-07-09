@@ -1,0 +1,58 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.blog{
+    &__wrapper{
+        background-color: $clr-secondary;
+        padding-top: 10rem;
+        span {
+            margin-top: -4rem;
+            max-width: 80rem;
+            margin-left: 4rem;
+        }
+        padding-bottom: 10rem;
+    }
+    
+    &__title{
+        h1{
+            font-size: 2rem;
+            margin-top: 5rem;
+            margin-left: 4rem;
+        }
+        span {
+            max-width: 80rem;
+            margin-left: 4rem;
+            margin-top: 1rem;
+
+        }
+    }  
+    
+    &__card {
+        display: flex;
+        padding: 5rem;
+        gap: 2rem;
+        margin-right: 15rem;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+    h3{
+        font-size: 3rem;
+        margin-top: -2rem;
+    }
+    h4{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        margin-bottom: 2rem;
+    }
+
+    &__button {
+        margin-left: 5rem;
+        padding-top: 4rem;
+    }
+    
+}

@@ -81,7 +81,31 @@ $positions: absolute, relative, fixed, static;
 .line {
     width: 100%;
     height: .5px;
-    background-color: $clr-secondary;
+    background-color: $clr-dark;
+    position: relative;
+    display: block;
+}
+
+.line2 {
+    width: 100%;
+    height: .5px;
+    background-color: $clr-light;
+    position: relative;
+    display: block;
+}
+
+.line3 {
+    width: 100%;
+    height: .2px;
+    background-color: #d9d9db;
+    position: relative;
+    display: block;
+}
+
+.line4 {
+    width: 100%;
+    height: .5px;
+    background-color: #3e3e42;
     position: relative;
     display: block;
 }

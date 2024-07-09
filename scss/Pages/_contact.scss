@@ -1,0 +1,78 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.contact{
+    &__wrapper{
+        padding-top: 10rem;
+        background-color: $clr-light;
+        display: flex;
+        padding-bottom: 10rem;
+        gap: 3rem;
+    }
+
+    &__Ltitle {
+        max-width: 40rem;
+        margin-left: 4rem;
+        h2{
+            font-size: 2rem;
+            color: $clr-dark;
+            margin-top: 5rem;
+        }
+        small{
+            color: $clr-primary;
+        }
+        p{
+            color: $clr-dark;
+            margin-bottom: 2rem;
+        }
+        text {
+            margin-bottom: 3rem;
+        }
+        span{
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+    }
+
+    &__Rtitle{
+        
+        h2{
+            font-size: 2rem;
+            color: $clr-dark;
+            margin-top: 5rem;
+        }
+        span {
+            max-width: 90rem;
+        }
+    }
+
+    &__info{
+        input{
+        width: 30rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        background-color: transparent;
+        border: 1px solid $clr-secondary;
+        margin-top: 2rem;
+        }
+
+        textarea{
+            height: 10rem;
+            width: 36rem;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            background-color: transparent;
+            border: 1px solid $clr-secondary;
+    
+        }
+     
+    }
+
+    &__button{
+        margin-left: 21.5rem;
+        margin-top: 3rem;
+        a{
+            margin-left: 1rem;
+        }
+    }
+}

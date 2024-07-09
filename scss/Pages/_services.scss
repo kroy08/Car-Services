@@ -1,5 +1,135 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
+.services {
+    &__wrapper {
+        background-color: $clr-secondary;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
 
+    &__title {
+        h2{
+            margin-top: 10rem;
+            font-size: 2rem;
+            margin-left: 4rem;
+
+        }
+        span {
+            max-width: 82rem;
+            margin-left: 4rem;
+            margin-top: 1rem;
+        }
+
+    }
+
+    &__card {
+        a {
+            color: $clr-primary;
+            &:hover{
+                color: $clr-dark;    
+                transition: 0.3s ease;
+            }
+        }
+        }
+        img {
+            margin-bottom: 1rem;
+        }
+        p{
+            margin-top: .5rem;
+            margin-bottom: 3rem;
+        }
+    
+
+    &__cards {
+        max-width: 475rem;
+        margin-left: 3.5rem;
+    }
+}
+
+// 
+
+.servicesPrice{
+    &__wrapper {
+        background-color: $clr-light;
+        padding-top: 5rem;
+       display: flex;
+       gap: 3rem;
+       padding-bottom: 5rem;
+    }
+    &__title1 {
+        margin-left: 4rem;
+        h2{
+            font-size: 2rem;
+            color: $clr-dark;
+        }
+        span {
+            margin-bottom: 3rem;
+        }
+        a {
+            color: $clr-primary;
+            &:hover{
+                color: $clr-dark;    
+                transition: 0.3s ease;
+            }
+
+        }
+        p {
+            color: $clr-dark;
+        }
+        text {
+        margin-top: .3rem;
+        margin-bottom: .3rem;
+        }
+        max-width: 30rem;
+    }
+
+    &__title {
+        margin-right: 4rem;
+        a{
+            color: $clr-dark;
+        }
+        h2{
+            font-size: 2rem;
+            color: $clr-dark;
+        }
+        small {
+            color: $clr-dark;
+            margin-bottom: 4rem;    
+        }
+        p {
+            color: $clr-dark;
+        }
+        span {
+            margin-bottom: 3rem;
+        }
+
+    }   
+    &__list {
+        display: flex;
+     }
+     
+
+     li {
+         display: flex;
+         flex-direction: row;
+        //  padding-right: 8rem;
+        text-align: justify ;
+         
+         a{
+            display: flex;
+            margin-right: 5rem;
+
+            &:hover{
+                color: $clr-primary;    
+                transition: 0.3s ease;
+            }
+         }
+         
+     }
+     ul {
+        margin-top: 2rem;
+     }
+
+}
 

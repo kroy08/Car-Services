@@ -11,7 +11,7 @@ var slider = tns({
 });
 
 var slider = tns({
-    container: ".services__cards",
+    container: ".homeServices__cards",
     items: 3,
     speed: 200,
     gutter: 100,
@@ -32,3 +32,4 @@ var slider = tns({
         },
     },  
 });
+

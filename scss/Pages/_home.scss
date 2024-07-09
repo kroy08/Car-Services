@@ -59,7 +59,7 @@
   }
 
   // services
-  .services {
+  .homeServices {
 
     
     &__title{
@@ -67,7 +67,7 @@
             font-size: 2rem;
             letter-spacing: .5rem;
             margin-left: 3rem;
-            border-bottom: .5px solid $clr-light;
+            border-bottom: .5px solid #d9d9db;
             max-width: 84rem;
             padding-bottom: 1rem;
             
@@ -131,7 +131,7 @@
 
     span {
       width: 40rem;
-      color: $clr-secondary;
+      // color: $clr-secondary;
       margin-bottom: 1rem;
       margin-top: 1rem;
     }
